@@ -131,6 +131,7 @@ function buildOPUS() {
         make install
         cd $ORIGPATH
         touch built/${ARCH}/opus_built
+        ${ARMT}strip "built/armel/lib/libopus.so.0.10.1"
         cp -r built/armel/lib/libopus.so.0.10.1 ../build/libopus.so.0
     else
         echo "OPUS already built for $ARCH"
@@ -146,7 +147,6 @@ arch=armel
 #fi
 cd "${ORIGPATH}"
 mkdir -p build/armel
-mkdir -p built/armel
 buildOPUS "$arch"
 
 cd "${ORIGPATH}"

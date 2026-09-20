@@ -2,7 +2,7 @@
 
 #https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
 
-SHERPA_URL = https://github.com/kercre123/vic-cloudless/releases/download/v0.0.1/sherpa-shared-citrinet.tar.gz
+SHERPA_URL = https://github.com/Victor-Rebuild/vic-cloudswitch/releases/download/sherpa-tar/sherpa-shared-citrinet.tar.gz
 SHERPA_UNZIPPED = build/sherpa-shared-citrinet/.unzipped
 
 INTENT_JSON = build/en-US/en-US.json
@@ -45,7 +45,7 @@ vic-cloud: gettoolchain opusbuild go_deps
 	-o build/vic-cloud \
 	cloud/*
 
-#	upx --best --lzma build/vic-cloud
+	upx --best --lzma build/vic-cloud
 
 
 #vic-gateway: go_deps
