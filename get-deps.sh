@@ -2,6 +2,7 @@
 
 TOOLCHAIN_VER="6.0.0-r08"
 
+
 if [[ ! -d ~/.anki/vicos-sdk/dist/$TOOLCHAIN_VER ]]; then
   echo "Getting toolchain version $TOOLCHAIN_VER..."
   mkdir -p ~/.anki/vicos-sdk/dist/$TOOLCHAIN_VER
