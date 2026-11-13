@@ -2,7 +2,7 @@
 
 #https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
 
-SHERPA_URL = https://github.com/Victor-Rebuild/vic-cloudswitch/releases/download/sherpa-tar/sherpa-shared-citrinet.tar.gz
+SHERPA_URL = https://github.com/Victor-Rebuild/vic-cloudswitch/releases/download/sherpa-tar-hardfp/sherpa-shared-citrinet.tar.gz
 SHERPA_UNZIPPED = build/sherpa-shared-citrinet/.unzipped
 
 INTENT_JSON = build/en-US/en-US.json

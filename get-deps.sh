@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-TOOLCHAIN_VER="6.0.0-r08"
+TOOLCHAIN_VER="6.1.0-r09"
 
 
 if [[ ! -d ~/.anki/vicos-sdk/dist/$TOOLCHAIN_VER ]]; then

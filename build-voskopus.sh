@@ -7,6 +7,7 @@ ORIGPATH="$(pwd)"
 
 #ARMT="$(pwd)/vic-toolchain/arm-linux-gnueabi/bin/arm-linux-gnueabi-"
 ARMT="$HOME/.anki/vicos-sdk/dist/6.1.0-r09/prebuilt/bin/arm-oe-linux-gnueabi-"
+LLVM="$HOME/.anki/vicos-sdk/dist/6.1.0-r09/prebuilt/bin/llvm-"
 
 #if [[ ! -f vic-toolchain ]]; then
 #    git clone https://github.com/kercre123/vic-toolchain --depth=1
@@ -71,13 +72,13 @@ function expToolchain() {
 #    export CFLAGS="-Wno-error"
 #    export CXXFLAGS="-Wno-error"
     export LD=${ARMT}ld
-    export AR=${ARMT}ar
+    export AR=${LLVM}ar
     #export FC=${ARMT}gfortran
-    export RANLIB=${ARMT}ranlib
+    export RANLIB=${LLVM}ranlib
     export AS=${ARMT}as
     export PODHOST=arm-oe-linux-gnueabi
     export CROSS_TRIPLE=${PODHOST}
-    export CROSS_COMPILE=${ARMT}
+    export CROSS_COMPILE=${LLVM}
     export GOARCH=arm
     export GOARM=7
     export GOOS=linux
@@ -131,7 +132,7 @@ function buildOPUS() {
         make install
         cd $ORIGPATH
         touch built/${ARCH}/opus_built
-        ${ARMT}strip "built/armel/lib/libopus.so.0.10.1"
+        ${LLVM}strip "built/armel/lib/libopus.so.0.10.1"
         cp -r built/armel/lib/libopus.so.0.10.1 ../build/libopus.so.0
     else
         echo "OPUS already built for $ARCH"
