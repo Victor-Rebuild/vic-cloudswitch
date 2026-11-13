@@ -33,8 +33,8 @@ go_deps:
 
 vic-cloud: gettoolchain opusbuild go_deps
 	CGO_ENABLED=1 GOARM=7 GOARCH=arm \
-	CC=${HOME}/.anki/vicos-sdk/dist/6.0.0-r08/prebuilt/bin/arm-oe-linux-gnueabi-clang \
-	CXX=${HOME}/.anki/vicos-sdk/dist/6.0.0-r08/prebuilt/bin/arm-oe-linux-gnueabi-clang++ \
+	CC=${HOME}/.anki/vicos-sdk/dist/6.1.0-r09/prebuilt/bin/arm-oe-linux-gnueabi-clang \
+	CXX=${HOME}/.anki/vicos-sdk/dist/6.1.0-r09/prebuilt/bin/arm-oe-linux-gnueabi-clang++ \
 	PKG_CONFIG_PATH="$(PWD)/voskopus/built/armel/lib/pkgconfig:$(PWD)/sherpa/lib/pkgconfig" \
 	CGO_CFLAGS="-Wno-implicit-function-declaration -I$(PWD)/build/sherpa-shared-citrinet/include -I$(PWD)/voskopus/built/armel/include/opus" \
 	CGO_CXXFLAGS="-stdlib=libc++ -std=c++11" \

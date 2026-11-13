@@ -23,7 +23,7 @@ scp -i ssh_root_key extra/setfreq root@$1:/anki/bin/
 ssh -i ssh_root_key root@$1 "sed -i \"s/Nice=\-2/Nice=3/g\" /usr/lib/systemd/system/vic-anim.service"
 rsync -e 'ssh -i ssh_root_key' -avr build/en-US root@$1:/anki/data/cloudswitch/
 if ssh -i ssh_root_key root@$1 "[[ ! -f /anki/lib/libonnxruntime.so.1 ]]"; then
-	rsync -e 'ssh -i ssh_root_key' -avr build/sherpa-shared-citrinet/lib/libonnxruntime.so.1 root@$1:/anki/lib/
+	rsync -e 'ssh -i ssh_root_key' -avr build/sherpa-shared-citrinet/lib/libonnxruntime.so root@$1:/anki/lib/
 	rsync -e 'ssh -i ssh_root_key' -avr build/sherpa-shared-citrinet/lib/libonnxruntime_providers_shared.so root@$1:/anki/lib/
 	rsync -e 'ssh -i ssh_root_key' -avr build/sherpa-shared-citrinet/lib/libsherpa-onnx-c-api.so root@$1:/anki/lib/
 fi
