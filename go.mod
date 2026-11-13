@@ -14,8 +14,8 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.22.0
 	github.com/gwatts/rootcerts v0.0.0-20250601184604-370a9a75f341
-	github.com/k2-fsa/sherpa-onnx-go v1.12.22
-	github.com/k2-fsa/sherpa-onnx-go-linux v1.12.22
+	github.com/k2-fsa/sherpa-onnx-go v1.13.8
+	github.com/k2-fsa/sherpa-onnx-go-linux v1.13.8
 	github.com/maxhawkins/go-webrtcvad v0.0.0-20210121163624-be60036f3083
 	github.com/stretchr/testify v1.11.1
 	golang.org/x/net v0.44.0
@@ -42,8 +42,8 @@ require (
 	github.com/grd/ogg v0.0.0-20130623210630-0dae53159b70 // indirect
 	github.com/grpc-ecosystem/grpc-opentracing v0.0.0-20180507213350-8e809c8a8645 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
-	github.com/k2-fsa/sherpa-onnx-go-macos v1.12.22 // indirect
-	github.com/k2-fsa/sherpa-onnx-go-windows v1.12.22 // indirect
+	github.com/k2-fsa/sherpa-onnx-go-macos v1.13.8 // indirect
+	github.com/k2-fsa/sherpa-onnx-go-windows v1.13.8 // indirect
 	github.com/klauspost/compress v1.18.0 // indirect
 	github.com/moby/docker-image-spec v1.3.1 // indirect
 	github.com/moby/go-archive v0.1.0 // indirect
